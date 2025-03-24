@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s  # How often to scrape targets (default: 1m)
+
+scrape_configs:
+  - job_name: "fastapi"
+    static_configs:
+      - targets: ["fastapi_app:8080","52.23.197.115:8080"]
